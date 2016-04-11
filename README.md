@@ -2,7 +2,7 @@
 
 deserialize PHP serialized strings to extract values as new column.
 
-see. [woothee/woothee-java](https://github.com/woothee/woothee-java)
+see. [keichan34/php-serialize](https://github.com/keichan34/php-serialize)
 
 ## Overview
 
