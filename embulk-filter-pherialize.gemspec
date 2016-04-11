@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'embulk-filter-pherialize'
-  spec.version       = '0.1.0'
+  spec.version       = '0.0.1'
   spec.authors       = ['cynipe']
   spec.summary       = 'Pherialize filter plugin for Embulk'
   spec.description   = 'Embulk plugin that deserialize PHP serialized strings to extract values as new column'
