@@ -43,7 +43,11 @@ module Embulk
         page.each do |record|
           serialized = @drop_serialized_column ? record.delete_at(target.index) : record[target.index]
           data = PHP.unserialize(serialized)
-          result = @extract_fields.map { |f| data[f['name']] }
+          if data.nil?
+            result = [nil] * @extract_fields.length
+          else
+            result = @extract_fields.map { |f| data[f['name']] }
+          end
           page_builder.add(record + result)
         end
       end
